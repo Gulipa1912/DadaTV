@@ -135,7 +135,7 @@ const VideoCardMobile = forwardRef<View, VideoCardMobileProps>(
             {isContinueWatching && (
               <View style={styles.continueWatchingBadge}>
                 <Play size={12} color="#ffffff" fill="#ffffff" />
-                <Text style={styles.continueWatchingText}>繼續</Text>
+                <Text style={styles.continueWatchingText}>繼續觀看</Text>
               </View>
             )}
 
