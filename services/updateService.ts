@@ -72,8 +72,8 @@ class UpdateService {
       // 使用DocumentDir而不是DownloadDir
       const files = await ReactNativeBlobUtil.fs.ls(dirs.DocumentDir);
       
-      // 查找所有OrionTV APK文件
-      const apkFiles = files.filter(file => file.startsWith('OrionTV_v') && file.endsWith('.apk'));
+      // 查找所有DadaTV APK文件
+      const apkFiles = files.filter(file => file.startsWith('DadaTV_v') && file.endsWith('.apk'));
       
       // 保留最新的2个文件，删除其他的
       if (apkFiles.length > 2) {
