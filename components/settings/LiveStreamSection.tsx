@@ -88,7 +88,7 @@ export const LiveStreamSection = forwardRef<LiveStreamSectionRef, LiveStreamSect
           <View style={styles.titleContainer}>
             <ThemedText style={styles.sectionTitle}>直播源地址</ThemedText>
             {remoteInputEnabled && serverUrl && (
-              <ThemedText style={styles.subtitle}>用手机访问 {serverUrl}，可远程输入</ThemedText>
+              <ThemedText style={styles.subtitle}>用手機訪問 {serverUrl}，可遠端输入</ThemedText>
             )}
           </View>
           <Animated.View style={inputAnimationStyle}>
@@ -97,7 +97,7 @@ export const LiveStreamSection = forwardRef<LiveStreamSectionRef, LiveStreamSect
               style={[styles.input, isInputFocused && styles.inputFocused]}
               value={m3uUrl}
               onChangeText={handleUrlChange}
-              placeholder="输入 M3U 直播源地址"
+              placeholder="輸入 M3U 直播源地址"
               placeholderTextColor="#888"
               autoCapitalize="none"
               autoCorrect={false}
