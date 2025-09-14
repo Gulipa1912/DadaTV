@@ -20,13 +20,13 @@ export const RemoteControlModal: React.FC = () => {
                 <QRCode value={serverUrl} size={200} backgroundColor="white" color="black" />
               </>
             ) : (
-              <ThemedText style={styles.statusText}>{error ? `错误: ${error}` : "正在生成二维码..."}</ThemedText>
+              <ThemedText style={styles.statusText}>{error ? `錯誤: ${error}` : "正在生成QRcode..."}</ThemedText>
             )}
           </View>
           <ThemedText style={styles.instructions}>
-            使用手机扫描上方二维码，即可在浏览器中向 TV 发送消息。或者访问{serverUrl}
+            使用手機掃描上方二維碼，即可在瀏覽器中向 TV 發送訊息。或訪問{serverUrl}
           </ThemedText>
-          <StyledButton text="关闭" onPress={hideModal} style={styles.button} variant="primary" />
+          <StyledButton text="關閉" onPress={hideModal} style={styles.button} variant="primary" />
         </ThemedView>
       </View>
     </Modal>
